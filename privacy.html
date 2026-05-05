@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — The Grand Curator</title>
+<style>
+  body { max-width: 720px; margin: 2rem auto; padding: 0 1rem;
+         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+         line-height: 1.55; color: #1a1614; background: #fafaf6; }
+  h1 { font-size: 1.8rem; margin-bottom: 0.2rem; }
+  h2 { font-size: 1.2rem; margin-top: 2rem; border-bottom: 1px solid #ddd; padding-bottom: 0.3rem; }
+  h3 { font-size: 1.05rem; margin-top: 1.4rem; }
+  p, li { font-size: 0.98rem; }
+  code { background: #efece4; padding: 0 4px; border-radius: 3px; font-size: 0.92em; }
+  a { color: #8b6914; }
+  .meta { color: #666; font-size: 0.9rem; margin-top: 0; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy — The Grand Curator</h1>
+<p class="meta">Last updated: 5 May 2026</p>
+
+<p>This privacy policy describes how <em>The Grand Curator</em> ("the app", "we", "our")
+handles information when you use it. It applies to the Android app published
+under the package name <code>com.grandcurator</code>.</p>
+
+<h2>Who is responsible</h2>
+<p>The app is developed and operated by:</p>
+<p><strong>Marcel Meijer</strong><br>
+Email: <strong><a href="mailto:info@kynto.eu">info@kynto.eu</a></strong></p>
+<p>You can contact us at the email above for any privacy-related question or request.</p>
+
+<h2>What we collect and why</h2>
+
+<h3>1. An anonymous account identifier</h3>
+<p>When you first open the app we sign you in to Firebase Authentication using
+<em>anonymous sign-in</em>. This creates a random user ID (UID) on Google's servers.
+We use that UID to:</p>
+<ul>
+  <li>save your game progress (gold, relics, restored artifacts, XP, daily streak)</li>
+  <li>post your scores to the global leaderboard</li>
+  <li>record purchases you make in the app (so they can't be replayed)</li>
+</ul>
+<p>We do <strong>not</strong> ask for your name, email address, phone number, contacts,
+location, photos, or any other personal information at sign-in.</p>
+
+<h3>2. A "Curator name" you choose</h3>
+<p>During onboarding you pick a curator name (3–20 characters, letters / digits /
+underscore only). This name is stored alongside your UID and shown next to
+your scores on the global leaderboard. Pick a name that doesn't identify you
+personally — it's visible to other players.</p>
+
+<h3>3. Gameplay statistics</h3>
+<p>We store these on Google Cloud Firestore:</p>
+<ul>
+  <li>gold, relics, scanners, glue counts</li>
+  <li>XP, current streak, total puzzles solved</li>
+  <li>per-artifact fragment progress</li>
+  <li>the date of your last puzzle and last spin</li>
+</ul>
+
+<h3>4. Leaderboard entries</h3>
+<p>When you finish a puzzle, the app sends the puzzle ID, your time, mistake
+count, and difficulty to a Cloud Function which computes your score and stores
+the entry under your UID and chosen name. Entries are public (visible on the
+leaderboard inside the app) but show only your curator name, not your UID.</p>
+
+<h3>5. Purchases</h3>
+<p>If you buy something from the in-app shop, Google Play handles your payment.
+We never see your card details. We do receive a <em>purchase token</em> from Google
+which we store to prevent the same purchase being claimed twice and to confirm
+delivery. We do not link your purchase to anything outside this app.</p>
+
+<h3>6. Advertising (AdMob)</h3>
+<p>The free version of the app shows ads provided by Google AdMob. AdMob may
+collect or receive information from your device — including a resettable
+advertising identifier — to provide and personalise ads. This is governed by
+<a href="https://policies.google.com/technologies/ads">Google's Privacy &amp; Terms</a>.</p>
+<p>If you purchase the <strong>Founder's Pack</strong> in-app, all interstitial ads are
+permanently removed.</p>
+
+<h3>7. Crash and integrity</h3>
+<p>We use Firebase App Check to verify that requests come from a genuine,
+unmodified copy of the app. This involves Google's Play Integrity service. No
+personal data is collected by App Check — it only confirms the app hasn't been
+tampered with.</p>
+
+<h2>How information is shared</h2>
+<p>Game data is stored on Google Firebase (Firestore, Authentication, Functions,
+App Check). We do not sell your information and do not share it with third
+parties other than:</p>
+<ul>
+  <li><strong>Google</strong> — provides the Firebase, Play Billing, AdMob, and Play Integrity
+      services that the app relies on.</li>
+</ul>
+<p>When you submit a leaderboard score, your <em>curator name</em> and <em>score</em> become
+publicly visible to anyone using the app's leaderboard screen.</p>
+
+<h2>Where information is stored</h2>
+<p>Firebase services may process and store data in data centres operated by
+Google in the United States and other countries. By using the app you agree
+to this transfer.</p>
+
+<h2>How long we keep it</h2>
+<p>We keep your account data for as long as you keep the app installed and using
+it. If you stop using the app for an extended period, or if you ask us to
+delete your data, we will remove your <code>users/{uid}</code> document and any
+leaderboard entries linked to it.</p>
+
+<h2>Your rights</h2>
+<p>You can ask us at any time to:</p>
+<ul>
+  <li>tell you what data is associated with your UID</li>
+  <li>delete all data associated with your UID</li>
+</ul>
+<p>To exercise these rights, email <strong>info@kynto.eu</strong> from the device where
+the app is installed (so we can identify your UID via the Settings screen),
+or include the UID shown in the app's Settings screen. We will respond within
+30 days.</p>
+<p>You can also stop all data collection by uninstalling the app. Note that
+uninstalling does <strong>not</strong> automatically delete your data from our servers —
+email us if you want it removed.</p>
+
+<h2>Children</h2>
+<p>The app is rated for ages 13 and over. We do not knowingly collect data from
+children under 13. If you believe a child under 13 has provided us with data,
+contact us at the email above and we will delete it.</p>
+
+<h2>Changes to this policy</h2>
+<p>If we update this policy we will change the "Last updated" date at the top.
+Material changes will be announced inside the app the next time you open it.</p>
+
+</body>
+</html>
